@@ -13,6 +13,7 @@
 	</types>
     <types>
 		<members>Lead.Owner_Since__c</members>
+		<members>Lead.Country_Name__c</members>
 		<members>Lead.Alpha_2_Code__c</members>
 		<members>Lead.Alpha_3_Code__c</members>
 		<members>Lead.Capital_City__c</members>
