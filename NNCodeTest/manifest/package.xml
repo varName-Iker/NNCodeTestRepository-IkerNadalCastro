@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Lead.Edit_Lead_Owner</members>
+		<name>ValidationRule</name>
+	</types>
+	<types>
+		<members>Lead-Lead %28Marketing%29 Layout</members>
+		<members>Lead-Lead %28Sales%29 Layout</members>
+		<members>Lead-Lead %28Support%29 Layout</members>
+		<members>Lead-Lead Layout</members>
+		<name>Layout</name>
+	</types>
+    <types>
+		<members>Lead.Owner_Since__c</members>
+		<members>Lead.Alpha_2_Code__c</members>
+		<members>Lead.Alpha_3_Code__c</members>
+		<members>Lead.Capital_City__c</members>
+		<members>Lead.Region__c</members>
+		<members>Lead.Regional_Blocs__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Lead_Owner_Since_Tracker</members>
+		<name>Flow</name>
+	</types>
+    <types>
+		<members>country_api</members>
+		<name>RemoteSiteSetting</name>
+	</types>
+    <types>
+		<members>API_KEY__c</members>
+		<members>API_Country__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>GET_AllCountry</members>
+		<members>GET_AllCountry_Test</members>
+		<members>CheckAPIUpdate</members>
+		<members>CheckAPIUpdate_Test</members>
+		<members>CheckAPIUpdate_Test_CalloutMock</members>
+		<members>Schedule_CheckAPIUpdate</members>
+		<members>Schedule_CheckAPIUpdate_Test</members>
+		<members>Trigger_Lead_APICountryDetails_Test</members>
+		<members>Trigger_APICountry_APICountryDetailsTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Trigger_Lead_APICountryDetails</members>
+		<members>Trigger_APICountry_APICountryDetails</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>StaticResource_Get_AllCountry_Test</members>
+		<name>StaticResource</name>
+	</types>
+	<version>60.0</version>
+</Package>

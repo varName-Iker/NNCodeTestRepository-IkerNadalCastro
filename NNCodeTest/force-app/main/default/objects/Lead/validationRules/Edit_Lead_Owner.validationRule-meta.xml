@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Lead_Owner</fullName>
+    <active>true</active>
+    <description>Cannot change owner unless Country, Lead Source and No. of Employees are filled in.</description>
+    <errorConditionFormula>OR(
+				AND(
+				    ISCHANGED(OwnerId),
+				    $Profile.Name = &quot;System Administrator&quot;,
+  		    ISBLANK(TEXT(LeadSource))
+    ),
+				AND(
+				    ISCHANGED(OwnerId),
+				    $Profile.Name = &quot;Contract Manager&quot;,
+  		    OR(ISBLANK(Country), ISBLANK(TEXT(LeadSource)))
+    ),
+				AND(
+				    ISCHANGED(OwnerId),
+				    AND($Profile.Name &lt;&gt; &quot;Contract Manager&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;),
+  		    OR(ISBLANK(Country), ISBLANK(TEXT(LeadSource)), ISBLANK(NumberOfEmployees))
+    )
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Cannot change owner unless Country, Lead Source and No. of Employees are filled in.</errorMessage>
+</ValidationRule>

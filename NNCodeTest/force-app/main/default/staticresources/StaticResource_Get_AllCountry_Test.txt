@@ -1,0 +1,1 @@
+[{"name": "Germany", "alpha2Code": "DE", "alpha3Code": "DEU", "capital": "Berlin", "region": "Europe", "regionalBlocs": "EU"},{"name": "Afghanistan", "alpha2Code": "AF", "alpha3Code": "AFG", "capital": "Kabul", "region": "Asia", "regionalBlocs": "SAARC"}]
